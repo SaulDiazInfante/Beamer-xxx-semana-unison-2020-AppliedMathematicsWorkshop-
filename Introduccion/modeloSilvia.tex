@@ -1,0 +1,95 @@
+\begin{frame}{}
+	\frametitle{Simplificación}
+ 	\only<1->{
+		\begin{textblock*}{40mm}(10mm, 20mm)
+			\begin{align*}
+				\only<1>{
+					\frac{du}{dt} &=
+						u^{\kappa_1}
+						\left(
+							\alpha_1 v^{\gamma_1} - \beta_1
+						\right)
+						\\
+					\frac{dv}{dt} &=
+						v^{\kappa_2}
+						\left(
+							\alpha_2 u^{\gamma_2} - \beta_2
+						\right)
+					\\
+ 				}
+				\only<2>{
+					\frac{du}{dt} &=
+					u^{
+						\xcancel{\kappa_1}
+					}
+					\left(
+						\alpha_1 v^{\gamma_1} - \beta_1
+					\right)
+					\\
+				\frac{dv}{dt} &=
+					v^{
+						\xcancel{\kappa_2}
+					}
+					\left(
+						\alpha_2 u^{\gamma_2} - \beta_2
+					\right)
+				\\
+				}
+				\only<3->{
+					\frac{du}{dt} &=
+					u
+					\left(
+						\alpha_1 v^{\gamma_1} - \beta_1
+					\right)
+					\\
+				\frac{dv}{dt} &=
+					v
+					\left(
+						\alpha_2 u^{\gamma_2} - \beta_2
+					\right)
+				\\
+				} 			
+				\only<5->{
+						\frac{dz}{dt} &=
+					-
+					k_1 \max\{u - \widetilde{u}, 0\}
+					\\
+					&
+					+
+					k_1 \max\{v - \widetilde{v}, 0\}
+				}
+				\end{align*}
+		\end{textblock*}
+ 	}
+	\only<4>{% modelote
+		\begin{textblock*}{1.2\textwidth}(0mm, 0mm)
+			\includegraphics[width=\textwidth, keepaspectratio]%
+			{./IMAGES/Komarova/silviaModelDescripcion.png}
+		\end{textblock*}	
+	}
+%
+	\only<6>
+	{
+		\begin{textblock*}{.5\textwidth}(60mm, 15mm)
+			\includegraphics[width=\textwidth, keepaspectratio]%
+			{./IMAGES/Komarova/silviaModel1.png}
+		\end{textblock*}
+	}
+	\only<7>
+	{
+		\begin{textblock*}{.5\textwidth}(60mm, 15mm)
+			\includegraphics[width=\textwidth, keepaspectratio]%
+			{./IMAGES/Komarova/silviaModel2.png}
+		\end{textblock*}
+	}
+	
+	
+	\only<3->{
+		\begin{textblock*}{100mm}(10mm, 65mm)
+			\begin{bibunit}[alpha]
+				\nocite{Jerez2015a}
+				\putbib
+		  \end{bibunit}
+  \end{textblock*}
+	}
+\end{frame}

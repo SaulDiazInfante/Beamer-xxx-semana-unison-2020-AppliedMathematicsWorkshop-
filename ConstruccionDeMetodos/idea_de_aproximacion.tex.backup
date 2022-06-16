@@ -1,0 +1,80 @@
+\begin{frame}
+  \frametitle{Idea general de la construcción}
+  \begin{empheq}[box={\Garybox[EDE]}]{align*}
+ 	  x(t) &= x_0 + \int_0^t f(x(s),s)ds
+		  +
+		  \int_0^t g(x(s),s)dB(s)
+	\end{empheq}
+	\only<2->{
+	\centering
+		\begin{tikzpicture}
+		  \labelnum[yshift=-2cm]{2}{Stencil}
+		\end{tikzpicture}
+	}
+	\only<3>{
+		\begin{equation*}
+			x(t_{n+1}) = 
+			x(t_{n}) 
+			+ 
+			\int_{t_{n}}^{t_{n+1}} f(x(s),s)ds
+		  +
+		  \int_{t_{n}}^{t_{n+1}} g(x(s),s)dB(s)
+		\end{equation*}
+	}
+	\only<4-6>{
+		\begin{equation*}
+			x(t_{n+1}) = 
+			x(t_{n}) 
+			+
+			\underbrace{
+				\int_{t_{n}}^{t_{n+1}} f(x(s),s)ds
+		  }_{%
+				  \textcolor<5-6>{red}{%
+					  \approx \text{det}%
+					 }
+				}
+		  +
+		  \underbrace{
+			  \int_{t_{n}}^{t_{n+1}} g(x(s),s)dB(s)
+			}_{%
+					\textcolor<6>{red}{%
+						\approx \text{Taylor}
+					}
+				}
+		\end{equation*}
+	}
+	\only<7->{
+		\begin{equation*}
+			x(t_{n+1}) = 
+			x(t_{n}) 
+			+
+			\underbrace{
+				\int_{t_{n}}^{t_{n+1}} f(x(s),s)ds
+		  }_{%
+				  \textcolor{red}{%
+					  \approx 
+					   f(x_n) h
+					 }
+				}
+		  +
+		  \underbrace{
+			  \int_{t_{n}}^{t_{n+1}} g(x(s),s)dB(s)
+			}_{
+				\substack{
+					\approx 
+					g(x_n) \Delta B_n \\
+					\Delta B_n = B_{n+1}-B_n
+				}
+			}
+		\end{equation*}
+	}
+ 	\only<8>{
+ 	\begin{align*}
+  	X_0 &=x_0 \qquad X_n  \approx x(t_n),
+  	\qquad 
+  	n=1 \dots, N-1
+  	\\
+  	X_{n+1} &= X_n + f(X_n) h + g(X_n) \Delta B_n, 
+	 \end{align*}
+	}
+\end{frame}

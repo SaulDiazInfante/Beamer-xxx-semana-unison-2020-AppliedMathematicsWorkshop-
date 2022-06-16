@@ -1,0 +1,10 @@
+ \newcommand{\noop}[1]{}
+\begin{thebibliography}{JC15}
+
+\bibitem[JC15]{Jerez2015a}
+Silvia Jerez and B~Chen.
+\newblock {Stability analysis of a Komarova type model for the interactions of
+  osteoblast and osteoclast cells during bone remodeling.}
+\newblock {\em Mathematical biosciences}, 264:29--37, jun 2015.
+
+\end{thebibliography}

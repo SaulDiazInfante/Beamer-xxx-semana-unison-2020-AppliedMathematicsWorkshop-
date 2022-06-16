@@ -1,0 +1,8 @@
+ \newcommand{\noop}[1]{}
+\begin{thebibliography}{JDIC18}
+
+\bibitem[JDIC18]{Jerez2017}
+S.~Jerez, S.~Díaz-Infante, and B.~Chen.
+\newblock {\em Mathematical Biosciences}, 299:153 -- 164, 2018.
+
+\end{thebibliography}

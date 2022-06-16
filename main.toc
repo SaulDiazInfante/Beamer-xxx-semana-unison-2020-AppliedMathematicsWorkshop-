@@ -1,0 +1,10 @@
+\babel@toc {spanish}{}\relax 
+\beamer@sectionintoc {2}{Construcción de Métodos Numéricos}{20}{0}{1}
+\beamer@subsectionintoc {2}{1}{EDEs en sentido de It^o}{21}{0}{1}
+\beamer@subsectionintoc {2}{2}{Aproximaci\'on de Movimiento Browninano}{34}{0}{1}
+\beamer@subsectionintoc {2}{3}{Construcci\'on del Euler-Mayurama}{67}{0}{1}
+\beamer@sectionintoc {3}{Aproximaci\'on Fuerte vs. D\'ebil}{67}{0}{2}
+\beamer@sectionintoc {4}{Ejemplo: Reconstrucción de masa osea}{69}{0}{3}
+\beamer@subsectionintoc {4}{1}{Propiedades de la solución}{102}{0}{3}
+\beamer@subsectionintoc {4}{2}{Resultados numéricos}{109}{0}{3}
+\beamer@sectionintoc {5}{Comentarios Finales}{116}{0}{4}

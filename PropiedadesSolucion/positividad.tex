@@ -1,0 +1,101 @@
+\begin{frame}[plain]
+	\frametitle{Existe, única y positiva}
+	 \begin{textblock*}{40mm}(10mm, 10mm)
+		 \begin{enumerate}[(H-1)]
+		  \item<2->  $\gamma_1<0$, $\gamma_2>0$,
+		  \item<2->  $|\gamma_1|\leq\gamma_2$ ,
+		  \item<2->  $\alpha_1\gamma_2\leq\alpha_2|\gamma_1|,$
+			\item<5-6> $-1< \gamma_1 < 0$ and $0<\gamma_2< 1$, 
+			\item<5-6> $ \exists p>1$ t.q
+						$\beta_i>\frac{1}{2}p(p-1)\sigma_i$
+		 \end{enumerate}
+	\end{textblock*}
+	%%%%%%%%%%%
+	\only<3->{%ecuación
+		\begin{textblock*}{65mm}(60mm, 10mm)
+					\begin{align*}
+						du_t &=
+							u_t
+							\left(
+								\alpha_1 v_t^{\gamma_1} - \beta_1
+							\right) 
+							dt
+							+
+							\textcolor{orange}{
+								\sigma_1 u_t dB_1(t)
+							}
+							\\
+						dv_t &=
+							v_t
+							\left(
+								\alpha_2 u_t^{\gamma_2} - \beta_2
+							\right)
+							dt
+							+
+							\textcolor{orange}{
+								\sigma_2 v_t dB_2(t)
+							}\\
+						x_t&=(u_t,v_t)
+					\end{align*}
+		\end{textblock*}
+	}
+	\only<4->{%
+		\begin{textblock*}{47mm}(10mm, 55mm)
+		\begin{Teorema}
+			$\forall$ $(u_0,v_0)$ positivos,
+			$\exists !$  $(u_t,v_t)$ continua e invariante 
+			$\in\mathbb{R}^2_+$
+			(c.p.1.).
+		\end{Teorema}
+	\end{textblock*}
+	}
+%
+	\only<6->{
+		\begin{textblock*}{47mm}(65mm, 55mm)
+			\begin{Teorema}[a.l.p.]
+				 $\forall \epsilon>0$, %
+				 $\exists K(\epsilon)<\infty$ %
+				 t.q. % 
+				 $\displaystyle
+				  \limsup_{t \to \infty}
+					  \probX{|x_t|\geq K} \leq\epsilon
+				 $.%
+			\end{Teorema}
+	\end{textblock*}
+	}%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\only<7>{
+		\begin{textblock*}{110mm}(10mm, 35mm)
+			\begin{Teorema}[oscilaciones]
+				\begin{align*}
+				 \limsup_{t \to \infty} u_t
+					 &\geq \xi_2,
+					 &
+					 \limsup_{t \to \infty} v_t
+					 &\geq\xi_1,
+					 &  c.s.
+				\\
+				 \liminf_{t \to \infty} u_t
+					 &\leq\xi_2,
+					 &
+					 \liminf_{t \to \infty} v_t
+					 &\leq\xi_1,
+					 & c.s.
+				\\
+				\xi_1
+					&=
+					\left(
+						\frac{\beta_1+\frac{1}{2}\,\sigma_1^2}{\alpha_1}
+					\right)^{\frac{1}{\gamma_1}
+					},
+					&
+					\xi_2
+					&=
+					\left(
+						\frac{\beta_2+\frac{1}{2},\sigma_2^2}{\alpha_2}
+					\right)^{\frac{1}{\gamma_2}}.
+				\end{align*}
+			\end{Teorema}
+		\end{textblock*}
+	}
+\end{frame}

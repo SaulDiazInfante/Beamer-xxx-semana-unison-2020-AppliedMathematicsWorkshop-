@@ -1,0 +1,96 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Simple two columns
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{frame title}
+  \begin{empheq}[box={\Garybox[Titlulo]}]{align*}
+ 		equation
+ 	\end{empheq}
+  \begin{columns}
+    \column{.5\textwidth}
+      \begin{block}{Colum1}
+        contents
+      \end{block}
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \column{.5\textwidth}
+        \begin{exampleblock}{Colum2}
+          contents
+        \end{exampleblock}
+  \end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Two columns with overlayarea
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{frame title}
+  \begin{empheq}[box={\Garybox[Titlulo]}]{align*}
+ 		equation
+ 	\end{empheq}
+  \begin{overlayarea}{\textwidth}{.7\textheight}
+    \begin{columns}
+      \column{.5\textwidth}
+        \begin{block}{Colum1}
+          contents
+        \end{block}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \column{.5\textwidth}
+          \begin{exampleblock}{Colum2}
+            contents
+          \end{exampleblock}
+    \end{columns}
+  \end{overlayarea}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Single column with empheq
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{frame title}
+  \begin{empheq}[box={\Garybox[Titlulo]}]{align*}
+                equation
+  \end{empheq}
+
+ \end{frame}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       frame with bib unit
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,noframenumbering]
+  \frametitle{EM diverge en sentido d\'ebil y fuerte.}    
+  \begin{columns}
+    \column{.4\textwidth}
+			\begin{overlayarea}{\textwidth}{.5\textheight}
+				Si el coeficiente de \textcolor{cyan}{deriva} o 
+				\textcolor{cyan}{difusión} 
+         de una  EDE,
+        \textcolor{cyan}{\emph{crece  más rápido que algo lineal}}, 
+        entonces el EM \textcolor{red}{diverge}.
+				\only<2->{
+					\\
+					\textcolor{magenta}{Ejemplo:}
+					\scalebox{.9}{\parbox{.5\linewidth}{%
+					\begin{align*}
+						dy(t) &= -10 \sign(y(t))|y(t)|^{\num{1.1}} 
+						dt + 4dW_t, 
+						\\
+						y_0 &= 0, \quad t\in [0,10] \\
+						&\approx \EX{|y(10)|}, \quad \num{e4}\text{ trayectorias }, \\
+												& h=10/N, \quad N=\{1, 2,\dots,  50\}
+					\end{align*}
+					}
+					}
+			}
+			\end{overlayarea}
+       \column{.5\textwidth}
+					\begin{overlayarea}{\textwidth}{.6\textheight}
+					\only<3->{
+						\vspace*{.12cm}
+						\includegraphics[width=\textwidth]
+						{Imagenes/Introduccion/FirstMomenDivergenceEM}
+					}
+					\end{overlayarea}
+\end{columns}
+  \begin{bibunit}[alpha]
+		\nocite{Hutzenthaler2010}
+		\biblio{PhdThesisBib.bib}
+  \end{bibunit}
+\end{frame}

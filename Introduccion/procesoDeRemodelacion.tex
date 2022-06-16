@@ -1,0 +1,29 @@
+%
+%
+% Esta parte funciona con Okular bajo linux.
+% Para Windows, comentar el siguiente bloque y
+% habilitar lo que sigue y presentar con acrobad reader
+%
+%
+%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Proceso de Remodelación en BMU}
+	\begin{tikzpicture}[remember picture,overlay]
+	  \node[anchor=south west, inner sep=0pt] at (current page.south west) {%
+    \movie[%
+	    height = \paperheight,%
+	    width = \paperwidth,%
+	    poster,%
+			showcontrols]{}{./Video/oc-ob.mp4}%
+      };
+  \end{tikzpicture}
+\end{frame}
+%%%Para windows (guacala!!!) es un purrun con el acrobad reader%%%
+%\begin{frame}{Proceso de Remodelación en BMU}
+%	\includemedia[
+%	width=1\linewidth,height=0.6\linewidth,
+%	activate=pageopen,
+%	addresource=oc-ob.flv,        %adjust
+%	flashvars={source=oc-ob.flv}  %adjust
+%	]{\frame{Click!}}{VPlayer9.swf}
+%\end{frame}

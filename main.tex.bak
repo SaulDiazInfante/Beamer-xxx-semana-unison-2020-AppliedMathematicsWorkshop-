@@ -1,0 +1,106 @@
+\documentclass[10pt]{beamer}
+\usetheme{metropolis}
+\usepackage{appendixnumberbeamer}
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+%\includeonlyframes{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Preambulo
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[spanish,activeacute]{babel}
+\usepackage{xcolor}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{wrapfig}
+\usepackage{siunitx}
+\usepackage{times}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage{multimedia}
+\usepackage{hyperref}
+\usepackage{thumbpdf}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{url}
+\usepackage{empheq}
+\usepackage{fancybox}
+\usepackage{esint}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{mathptmx}
+\usepackage{helvet}
+\usepackage{tikz}%
+\usepackage{circuitikz}
+\usepackage{csvsimple}
+\usepackage{pgfplots}
+\usepackage{multimedia}
+\usepackage{media9}
+\usepackage{proba}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{bibunits}
+\usepackage{tcolorbox}
+%\usepackage[texcoord,grid,gridunit=mm,gridcolor=red!
+%60,subgridcolor=green!60]%
+%{eso-pic}
+\pgfplotstableread[col sep = comma]{./IMAGENES/gbm.csv}\mydata
+\usepackage[makeroom]{cancel}
+\usepackage{epstopdf}
+\epstopdfsetup{outdir=./}
+\title{Modelado con Ecuaciones Diferenciales
+    Estoc\'asticas via Perturbaci\'on de Par\'ametros}
+\subtitle{y una Invitaci\'on a la soluci\'on num\'erica de EDEs}
+\date{Marzo 2--6, 2020}
+\author{Sa\'ul D\'iaz Infante Velasco}
+\institute{CONACYT-Universidad de Sonora}
+%\titlegraphic{%
+%\hfill\includegraphics[height=1.5cm]{./figures/logo_snidm.png}
+%}
+\metroset{block=fill}
+\input{setup}
+\defaultbibliography{CharlaBib}
+\defaultbibliographystyle{abbrv}
+\begin{document}
+    \maketitle
+    \section*{Introducci\'on}
+        \input{./Introduccion/perturbacion_de_modelos}
+%   %\section{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{frame}{Esquema de Charla}
+        \setbeamertemplate{section in toc}[sections numbered]
+        \tableofcontents[hideallsubsections]
+    \end{frame}
+    \section{Construcción de Métodos Numéricos}
+        \subsection{EDEs en sentido de It^o}
+            \input{ConstruccionDeMetodos/notacion_edes}
+            \input{ConstruccionDeMetodos/idea_de_aproximacion}
+        \subsection{Aproximaci\'on de Movimiento Browninano}
+            \input{./AproximacionDeMB/random_walks.tex}
+        \subsection{Construcci\'on del Euler-Mayurama}
+        \section{Aproximaci\'on Fuerte vs. D\'ebil}
+            \input{./DebilVsFuerte/debil_vs_fuerte.tex}
+    \section{Ejemplo: Reconstrucción de masa osea}
+        \input{./Introduccion/procesoDeRemodelacion.tex}
+        \input{./Introduccion/diagramaRemodelacion}
+        \input{./Introduccion/modeloKomarova.tex}
+        \input{./Introduccion/modeloSilvia.tex}
+        \input{./Perturbacion/JustificacionRuido.tex}
+        \input{./Perturbacion/Alternativas.tex}
+        \input{./Perturbacion/perturbacion.tex}
+        \subsection{Propiedades de la solución}
+            \input{./PropiedadesSolucion/positividad.tex}
+        \subsection{Resultados numéricos}
+        \input{./ResultadosNumericos/resultadosNumericos.tex}
+    \section{Comentarios Finales}
+        \input{./ComentariosFinales/comentarios_finales.tex}
+    \appendix
+        \input{Apendice.tex}
+\end{document}

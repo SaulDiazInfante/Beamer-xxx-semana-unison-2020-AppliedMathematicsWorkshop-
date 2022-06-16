@@ -1,0 +1,102 @@
+\begin{frame}[plain]
+	%\frametitle{EM diverge en sentido d\'ebil y fuerte.}    
+	\vspace{-1cm}
+		\begin{overlayarea}{\textwidth}{\textheight}
+			\begin{columns}
+				\column[t]{.3\textwidth}
+					\textcolor{cyan}{Ejemplo:}
+					\scalebox{.7}{\parbox{.5\linewidth}{%
+					\begin{align*}
+						dy(t) &= -10 \sign(y(t))|y(t)|^{\num{1.1}} dt + 4dW_t, \\
+						y_0 &= 0, \quad t\in [0,10] \\
+						&\approx \EX{|y(10)|}, \quad \num{e4}\text{ trayectorias }, \\
+						& h=10/N, \quad N=\{1, 2,\dots,  50\}
+					\end{align*}
+					}
+				}
+				\column[t]{.6\textwidth}
+					\only<2->{
+						\vspace*{.12cm}
+						\includegraphics[width=\textwidth]%
+						{./IMAGENES/LIPSCHITZ/HutzenthalerExperiment.png}
+					}
+		\end{columns}
+		%\vspace{0.3cm}
+		\only<3->{
+			\begin{bibunit}[alpha]
+				\nocite{Hutzenthaler2010}
+				\putbib
+			\end{bibunit}
+		}
+		\end{overlayarea}
+	\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}[plain]
+	\frametitle{Modelos con Condiciones Local Lipschitz}
+	\begin{columns}
+		\column{.3\textwidth}
+			\begin{overlayarea}{\textwidth}{.3\textheight}
+			  \begin{itemize}[<+-|alert@+>] 	
+				  \item 
+						  Biología
+				  \item
+					  Finanzas
+				  \item
+					  Física
+				  \item
+					  Química
+				\end{itemize}
+			\end{overlayarea}
+		\column{.75\textwidth}
+			\begin{overlayarea}{\textwidth}{\textheight}
+				\begin{exampleblock}{
+						\only<1>{Lotka Volterra}
+						\only<2>{Henston}
+						\only<3>{Langevin}
+						\only<4>{Brusselator}
+					}
+					 \only<1>{
+						\begin{align*}
+							dX_t &= (\lambda X_t - k X_t Y_t ) dt +\sigma X_t dW_t\\
+							dY_t &= (k X_t Y_t -mY_t) dt
+						\end{align*}
+					}
+					\only<2>{
+						\begin{align*}
+							dS_t &= \mu S_t dt + \sqrt{V_t}S_t
+								\left(
+									\sqrt{1- \rho^2}dW^{(1)}_t
+									+ \rho dW^{(2)}_t
+								\right)\\
+							dV_t &=
+								\kappa (\lambda - V_t)dt +
+								\theta \sqrt{V_t} dW^{(2)}_t
+						\end{align*}
+					}
+					\only<3>{
+						\begin{equation*}
+							dX_t = -(\nabla U)(X_t)dt + \sqrt{2\epsilon}dW_t
+						\end{equation*}
+					}
+					\only<4>{
+						\begin{align*}
+							dX_t =& 
+								\left[
+									\delta
+									-(\alpha + 1) X_t +
+									Y_t X_t^2
+								\right] dt
+								+ g_1(X_t) dW_t^{(1)} \\
+							dY_t =&
+								\left[
+									\alpha X_t +
+									Y_t X_t^2
+								\right] dt
+								+ g_2(X_t) dW_t^{(2)} \\
+						\end{align*}
+					}
+				\end{exampleblock}
+			\end{overlayarea}
+	\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

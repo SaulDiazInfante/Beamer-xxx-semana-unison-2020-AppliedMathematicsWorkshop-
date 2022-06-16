@@ -1,0 +1,465 @@
+\begin{frame}{}
+	\frametitle{Funci\'on caracter\'istica}
+	\hypertarget{dfn:FuncionCaracteristica}{}
+	\begin{block}{Definici\'on (Funci\'on caracter\'istica)}
+			Sea $X$ 
+			v. a., entonces,
+			$$
+				\phi_{X}(t)= \EX{ e^{i t X}}, \qquad t \in \R,
+			$$
+		es la función característica de $X$.
+	\end{block}
+	\uncover<2>{
+	\begin{block}{Teorema de continuidad}
+		Sea 
+		$
+			\{ X_{n} \}_{n=1}^{\infty}   \quad v.a.
+		$, entonces
+		$$ 
+			X_{n} \xrightarrow{\mathcal{D}} X \Leftrightarrow 
+			\phi_{X_{n}}(t) 
+			\to \phi_{X}(t) .
+		$$
+	\end{block}
+	}
+	\hyperlink{cns:Limite}{\beamerreturnbutton{Const}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%soluciones-------------------
+ \begin{frame}
+   \frametitle{Integral Estocástica}
+   \hypertarget{frm:integracion}{}
+   \begin{empheq}[box={\Garybox[Integral]}]{align*}
+ 			& \int_{0}^T f(\cdot) d 
+ 			\only<1-2>{
+				(\cdot)
+ 			}
+ 			\only<3->{
+				B(\cdot)
+ 			} 
+ 			\\ 
+				\only<2>{
+					&
+					f: [0, T] \to \R 
+				} 
+				\only<3->{
+					&
+					f: [0,T] \times \Omega \to \R
+				}
+  	\end{empheq}
+   \begin{overlayarea}{\textwidth}{.7\textheight}
+			\only<2->{
+				\hyperlink{frm:incremento_bm}{Determinista:}
+				$$
+					\int_{0}^T f(\cdot) d(\cdot)
+					\approx
+					\sum_{j=0}^{N-1}
+						f(t_j) (t_{j+1} - t_{j})
+				$$
+			}
+			\begin{columns}
+				\column[t]{.5\textwidth}
+					\only<3->{
+						\begin{block}{It\^o}
+							$$
+								\approx
+								\sum_{j=0}^{N-1}
+									f(t_{j})
+									(B_{t_{j+1}} - B_{t_j})
+							$$
+						\end{block}
+				}
+				%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+				\column[t]{.5\textwidth}
+				\only<4>{	
+					\begin{exampleblock}{Stratonovich}
+ 						$$
+							\approx
+ 							\sum_{j=0}^{N-1}
+ 								f
+  							\left(
+									\frac{t_{j} + t_{j+1}}{2}
+  							\right)
+ 								(B_{t_{j+1}} - B_{t_j})
+ 						$$
+					\end{exampleblock}
+				}
+     \end{columns}
+   \end{overlayarea}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{bibunit}[apalike]
+\begin{frame}
+  \frametitle{Existencia y unicidad de soluciones fuertes para EDEs}
+	\hypertarget{thm:ExistenciaUnicidadEDE}{}  
+	%\vspace{-.50cm} 
+	%\vspace{-.23cm}  
+	\begin{block}{%
+		Sea $dX_{t}=f(t,X_{t})dt+f(t,X_{t})dB_{t}$ 
+		en el sentido de It\^{o}, t.q.
+		}
+		\begin{enumerate}[(EU1)]
+		  \item (Medibles):
+				$f,g$ son \textcolor{cyan}{$\mathcal{L}^{2}-$medibles} en
+				$(t,x)\in[t_{0},T] \times \mathbb{R}^d$.
+			\item (\only<2-4>{\textcolor{orange}{Local }}Lipschitz): 
+				\only<1>{$\exists K>0$}  
+				\only<2-4>{$\exists \textcolor{orange}{K_n}>0$}
+				t.q. 
+				
+				$
+				 \forall t\in[t_{0},T], 
+				$
+				$
+					\forall x,y\in \mathbb{R}^d
+				$
+				\only<2-4>{t.q. \textcolor{orange}{$|x-y|\leq n$}}
+				\only<1>{
+					\begin{align*}
+						\textcolor{red}{|f(t,x)-f(t,y)|}
+								\textcolor{red}{\leq K|x-y|}, 
+						\quad	
+						\textcolor{red}{|g(t,x)-g(t,y)|}
+								\textcolor{red}{\leq K|x-y|}
+					\end{align*}
+				}
+				\only<2-4>{
+					\begin{align*}
+						\textcolor{red}{|f(t,x)-f(t,y)|}
+								\textcolor{orange}{\leq K_n|x-y|},
+							\quad	
+						\textcolor{red}{|g(t,x)-g(t,y)|}
+							\textcolor{orange}{\leq K_n|x-y|}
+					\end{align*}
+				}
+			\item 
+				\only<1-2>{	
+					(De crecimiento lineal):
+				}
+				\only<3-4>{
+					(\textcolor{orange}{Monotonia})
+				}
+				$
+					\exists K>0$, 
+				t.q. 
+				$
+					\forall t\in[t_{0},T],
+					\quad  \forall x\in\mathbb{R}^d
+				$
+				\only<1-2>{
+					\begin{align*}
+						\textcolor{red}{|f(t,x)|^{2}}
+							\textcolor{red}{\leq K^{2}(1+|x|^{2})},
+						\quad
+						\textcolor{red}{|g(t,x)|^{2}}
+							\textcolor{red}{\leq K^{2}(1+|x|^{2})}
+					\end{align*}
+				}
+				\only<3-4>{
+					$$
+						\textcolor{orange}{
+							\innerprod{x}{f(t,x)} 
+						+ 
+							|g(x)|^2 \leq K(1+|x|^2)
+						}
+					$$
+				}
+		  \item (Condición inicial): 
+			  $X_{t_{0}}$ es
+			  $\mathcal{F}_{t_{0}}-$medible con 
+			  $
+				  \EX{|X_{t_{0}}|}<\infty
+				$.
+		\end{enumerate}
+		Entonces, \colorbox{darkyellow}{$ \exists ! X_{t}$} en
+		$[t_{0},T]$ con  \colorbox{darkyellow}{
+			$\displaystyle
+				 \sup_{t_{0}\leq t\leq T}
+				 \mathbb{E}(|X_{t}|^{2})<\infty$.
+				 }
+	\end{block}
+	\hyperlink{frm:notacion}{\beamerreturnbutton{Construccion}}
+\end{frame}
+% %\end{bibunit}
+%----------------------------Promedio 
+%Steklov---------------------------------------------
+% %\begin{bibunit}[apalike]
+% \begin{frame}
+%   \frametitle{Promedio de Steklov}
+% 	\hypertarget{dfn:Steklov}{}    
+%   \begin{overlayarea}{\textwidth}{.5\textwidth}
+%       \begin{block}{Promedio de Steklov} %\cite{matus2005exact}}
+% 	  \begin{align*}	  		
+% 	  		F(X_t)\approx \varphi(X_n,X_{n+1})=&
+% 		        \left(
+% 		        \frac{1}{X_{n+1}-X_{n}}
+% 		        \int_{X_n}^{X_{n+1}} \frac{du}{F(u)}
+% 		        \right)^{-1}\\
+% 		      	t_n\leq & t \leq t_{n+1},\\
+% 		      	X_n=&X_{t_n}, \quad t_n=nh.	 
+% 	  \end{align*}
+%     \end{block}
+%   \end{overlayarea}   
+% \hyperlink{ex:EDEMult}{\beamerreturnbutton{Ej:EDEMult}}\\
+% \hyperlink{Idea}{\beamerreturnbutton{idea}}  
+% %\biblio{BibliografiaTesis}
+% \end{frame}
+% %\end{bibunit}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Lema de Gronwall}
+	\hypertarget{lem:Gronwall}{}
+     \begin{lema}[de Gronwall]
+		Sean $\alpha,\beta:[t_0,T]\to\mathbb{R}$ funciones integrables t.q.
+		$$
+			0\leq \alpha(t)\leq \beta(t) +L \int_{t_0}^{t}\alpha(s)ds 
+			\qquad t\in[t_0,T].
+		$$
+		Entonces 
+		$$
+			\alpha(t)\leq \beta(t)+L\int_{t_0}^{t} e^{L(t-s)}\beta(s)ds
+		$$
+		\end{lema}
+	\hyperlink{prb:Consistencia2}{\beamerreturnbutton{Prueba}}\\
+	\hyperlink{Idea}{\beamerreturnbutton{idea}}
+	%\biblio{BibliografiaTesis}
+\end{frame}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Desigualdad de Lyapunovl}
+	\hypertarget{thm:DesLyapunov}{}    
+	Sea $X$ una v.a integrable y $0<q\leq p$ entonces    
+    \begin{block}{Sea $X$ una v.a integrable y $0<q\leq p$ entonces}
+		$$    	
+    		\mathbb{E}\left(\left|X\right|^{q}\right)\leq\mathbb{E}\left(\left|X\right|^{p}\right)^{\frac{q}{p}}
+		$$    
+    \end{block}
+	\hyperlink{prb:Consistencia3}{\beamerreturnbutton{Prueba}}
+%\hyperlink{Idea}{\beamerreturnbutton{idea}}  
+%\biblio{BibliografiaTesis}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Isometría de It\^{o}}
+	\hypertarget{thm:Isometria}{}    	
+	\begin{block}{Propiedades Integral de It\^{o}}
+		\begin{enumerate}		
+		\item
+			$\displaystyle		
+				\mathbb{E}
+				\left[
+					\int_0^T g(r)dB_r
+				\right]=0
+			$
+		\item(Isometr\'ia)
+			$\displaystyle		
+				\mathbb{E}
+				\left[
+					\left(
+						\int_0^T g(r)dB_r					
+					\right)^2		
+				\right]=
+				\int_0^T g^2(r)d	r		
+			$
+		\end{enumerate}	
+	\end{block}	
+	\hyperlink{prb:ConsistenciaISO}{\beamerreturnbutton{Prueba}}  
+%\biblio{BibliografiaTesis}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+%[label=MatrixFunctions,noframenumbering]
+	\hypertarget{MatrixFunctions}
+	\frametitle{Apendice A}
+	\scalebox{0.85}{\parbox{1.0\linewidth}{
+		\begin{align*}	
+			A^{(1)}(h,u)&:=
+			\begin{pmatrix}
+				e^{ha_1(u)} & 
+\multicolumn{2}{c}{\text{\kern0.5em\smash{\raisebox{-1ex}{\huge 0}}}} \\
+				&\ddots\\
+				\multicolumn{2}{c}{\text{\kern-0.5em\smash{\raisebox{0.95ex}{\huge 
+0}}}} 
+				& e^{ha_d(u)}
+			\end{pmatrix},
+			\\
+		%	
+			A^{(2)}(h,u)&:=
+			\begin{pmatrix}
+				\left(
+					\displaystyle
+					\frac{e^{ha_1(u)} - 1}{a_1(u)}
+				\right)\1{E_1^c}	& 
+				\multicolumn{2}{c}{\text{\kern0.5em\smash{\raisebox{-1ex}{\huge 0}}}}\\
+				& \ddots&\\
+				\multicolumn{2}{c}{\text{\kern0.5em\smash{\raisebox{-1ex}{\huge 0}}}}&
+				\left(
+					\displaystyle
+					\frac{e^{ha_d(u)} - 1}{a_d(u)}
+				\right)\1{E_d^c}% + h \1{E_i} 
+			\end{pmatrix}
+			+h
+			\begin{pmatrix}
+				\1{E_1} & 
+\multicolumn{2}{c}{\text{\kern0.5em\smash{\raisebox{-1ex}{\huge 0}}}}\\
+				&\ddots &\\
+				\multicolumn{2}{c}{\text{\kern0.5em\smash{\raisebox{-1ex}{\huge 0}}}} &
+				\1{E_d}
+			\end{pmatrix},\\	
+			E_j&:=\{x \in \R^d: a_j(x)=0\} , \qquad 
+			b(u):= 
+			\left(
+				b_1(u^{(-1)}), \dots , b_d(u^{(-d)})
+			\right)^T.		
+		\end{align*}
+		}
+	}
+	\\
+	\hyperlink{tcb:mipropuesta}{\beamerreturnbutton{LS}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%
+%\begin{frame}[label=ZerosConditions, noframenumbering]
+%	\frametitle{Apendice B: Resultato para ceros no aislados}    
+%	\begin{columns}
+%		\column{.6\textwidth}
+%			\begin{Teorema}[L'h\^{o}pital Multivariable] 
+%				\begin{itemize}
+%					\item 
+%						$\mathcal{N}$ vecindad en $\R^2$ de $\mathbf{p}$ donde
+%						$f:\mathcal{N}\to \R$,  
+%						$g:\mathcal{N}\to \R$ diferenciables son cero. 
+%					\item
+%						$
+%							C=\{x \in \mathcal{N}: f(x)=g(x)=0 \},
+%						$				
+%					\item
+%						Supón $C$ suave, que pasa por $\mathbf{p}$.
+%					\item
+%					 $\exists \ \mathbf{v}$ no tangente a $C$ en $\mathbf{p}$
+%						t.q  $D_{\mathbf{v}}g$ en la dirección $\mathbf{v}$ es no nula en
+%						$\mathcal{N}$.
+%					\item
+%						$\mathbf{p}$ es punto limite de $\mathcal{N}\setminus C$. 
+%			\end{itemize}
+%	    Entonces
+%				$
+%					\displaystyle
+%					\lim_{(x,y)\to \mathbf{p}}
+%					\frac{f(x,y)}{g(x,y)} =
+%					\lim_{
+%						\substack{
+%							(x,y)\to \mathbf{p}\\ 
+%							(x,y)\in \mathcal{N} \setminus C
+%						}
+%					}
+%					\frac{D_{\mathbf{v}} f }{D_{\mathbf{v}} g},
+%				$
+%				siempre que exista el limite.
+%			\end{Teorema}
+%			\column{.4\textwidth}
+%				\includegraphics[width=\linewidth]{Imagenes/Apendice/LawlorThm.png}
+%				\\
+%				\hyperlink{Construccion<6>}{\beamerreturnbutton{Hip\'otesis}}
+%				\begin{bibunit}[alpha]
+%					\nocite{Lawlor2012}
+%					\biblio{PhdThesisBib.bib}
+%				\end{bibunit}
+%	\end{columns}
+%\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+\begin{frame}[noframenumbering]
+	\frametitle{Apendice B: Resultado para ceros aislados}    
+	\begin{columns}
+		\column{.4\textwidth}
+		\begin{definicion}[DD respecto a $p$]
+			 $u,\mathbf{p}\in \R^2$,  $\alpha$ angulo positivo respecto a eje-$x$ 
+			segmento $\overline{u \mathbf{p}}$.	 
+			\begin{align*}
+				f_{\alpha}(u) &= 
+				\frac{ \innerprod{q-u}{\nabla f(u)}}{|u-q|}			
+			\end{align*}
+			 \emph{derivada direccional respecto $\mathbf{p}$ en $u$}.
+		\end{definicion}
+		\begin{definicion}[Star-like set]
+			$S\subset \R^2$ es \emph{star-like} respecto $\mathbf{p}$,  $\forall \ s 
+\in S$ 
+			el segmento abierto	$\overline{s \mathbf{p}}$  esta en $S$.
+		\end{definicion}
+
+		\column{.6\textwidth}
+		%\includegraphics[width=\linewidth]{Imagenes/Apendice/LawlorThm.png}
+		\begin{Teorema}
+			\begin{itemize}
+				\item 
+					$\mathbf{p}\in \R^2$, $S\subset \R^2$ star-like respecto $\mathbf{p}$ 
+en el dominio de $f$,$g$.
+				\item
+					En $S$, $f,g$ diferenciables , $g_{\alpha}(s)\neq 0$, 	
+				\item 
+					$f(\mathbf{p})=g(\mathbf{p})=0$,
+					\quad
+					$
+						\displaystyle
+						\lim_{x \to \mathbf{p}}
+						\frac{f_{\alpha}(x)}{g_{\alpha}(x)} = L,	
+					$
+			\end{itemize}
+			Entonces
+				$ 
+					\displaystyle
+					\lim_{x \to \mathbf{p}}
+					\frac{f(x)}{g(x)} = L.
+				$
+		\end{Teorema}
+		\begin{bibunit}[alpha]
+			\nocite{FineAIandKass1966}
+			\putbib
+		\end{bibunit}
+	\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[noframenumbering]
+	\frametitle{Apéndice B: Condiciones para ceros de $a_j(\cdot)$}    
+		\hypertarget{ZerosConditions}{}
+		\textcolor{orange}{
+			 $E_j:=\{x\in \R^{d}: a_j(x)=0\}$
+		} satisface alguno de los puntos:
+		\begin{enumerate}[(i)]
+			\item
+				 $p \in E_j$ es un cero no aislado de  $a_j(\cdot)$ y:
+			\begin{itemize}
+				\item  
+					\textcolor{cyan}{
+					$
+						D:=\{u: e^{ha_j(u)}-1=a_j(u)= 0\},
+					$ 
+				}
+				es una curva suave que pasa por $p$. 
+				\item
+				El vector canónico $e_j$ es no tangente a $D$.
+				\item
+					Para cada $p \in E_j$, existe una bola $B_r(p)$ t.q.
+				$$
+					a_j\neq 0, \qquad
+					\frac{\partial a_j(u)}{\partial u^{(j)}} \neq 0 ,\qquad 
+					\forall u \in D
+					\setminus B_r(p).
+				$$
+			\end{itemize}	
+			\item
+				 $p \in E_j$ es un cero aislado de $a_j(\cdot)$ y:
+			\begin{itemize}
+				\item
+					Para cada $q\in E_j$,  $p$ no es punto limite de
+					$E_{\alpha}:=\{x \in \R^d: (a_j)_\alpha(x)=0\}$.
+				\item
+					Para cada $p \in E_j$ existe  $B_r(p)$, t.q.
+					la derivada direccional respecto a $p$ satiface
+				$$
+				(a_j)_\alpha(x) \neq 0, \qquad \forall x\in B_r(p).
+				$$
+			\end{itemize}
+		\end{enumerate}
+\hyperlink{frm:condiciones_zeros}{\beamerreturnbutton{LSHyp}}
+\end{frame}

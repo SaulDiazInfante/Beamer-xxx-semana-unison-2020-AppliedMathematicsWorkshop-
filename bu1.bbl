@@ -1,0 +1,9 @@
+ \newcommand{\noop}[1]{}
+\begin{thebibliography}{}
+
+\bibitem[Raggatt and Partridge, 2010]{Raggatt2010}
+Raggatt, L.~J. and Partridge, N.~C. (2010).
+\newblock {Cellular and Molecular Mechanisms of Bone Remodeling}.
+\newblock {\em Journal of Biological Chemistry}, 285(33):25103--25108.
+
+\end{thebibliography}

@@ -1,0 +1,63 @@
+\begin{frame}{}
+	\frametitle{El Modelo de Komarova}
+ 	\only<1->{
+		\begin{textblock*}{40mm}(10mm, 20mm)
+			\begin{align*}
+ 			\frac{du}{dt} &=
+ 				u^{\kappa_1}
+				\left(
+					\alpha_1 v^{\gamma_1} - \beta_1
+				\right)
+				\\
+			\frac{dv}{dt} &=
+				v^{\kappa_2}
+				\left(
+					\alpha_2 u^{\gamma_2} - \beta_2
+				\right)
+			\\
+			\only<3->{
+					\frac{dz}{dt} &=
+				-
+				k_1 \max\{u - \widetilde{u}, 0\}
+				\\
+				&
+				+
+				k_1 \max\{v - \widetilde{v}, 0\}
+			}
+				\end{align*}
+		\end{textblock*}
+ 	}
+	\only<4>{% modelote
+		\begin{textblock*}{.9\textwidth}(10mm, 5mm)
+			\begin{exampleblock}{Descripción}
+				\includegraphics[width=.98\textwidth, keepaspectratio]%
+				{./IMAGES/Komarova/komarovaModelDescripcion.png}
+			\end{exampleblock}
+		\end{textblock*}	
+	}
+	\only<5>{% modelote
+		\begin{textblock*}{.9\textwidth}(10mm, 5mm)
+			\begin{exampleblock}{Descripción}
+				\includegraphics[width=.98\textwidth, keepaspectratio]%
+				{./IMAGES/Komarova/komarovaModelDescripcionb.png}
+			\end{exampleblock}
+		\end{textblock*}	
+	}
+	%
+	\only<6>
+	{
+		\begin{textblock*}{.5\textwidth}(60mm, 20mm)
+			\includegraphics[width=\textwidth, keepaspectratio]%
+			{./IMAGES/Komarova/komarovaModel1.png}
+		\end{textblock*}
+	}
+	\only<2-4>{
+		\begin{textblock*}{100mm}(10mm, 63mm)
+			\begin{bibunit}[alpha]
+				\nocite{Komarova2003}
+				%\biblio{CharlaBib.bib}
+				\putbib
+		  \end{bibunit}
+  \end{textblock*}
+	}
+\end{frame}
