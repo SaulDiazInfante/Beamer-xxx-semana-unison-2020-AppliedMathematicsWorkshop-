@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.12)  16 JUN 2022 09:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.12)  16 JUN 2022 10:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1464,7 +1464,34 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )))
-(./setup.tex
+(/usr/local/texlive/2022/texmf-dist/tex/latex/qrcode/qrcode.sty
+Package: qrcode 2015/01/08 v1.51 QR code generation
+\c@qr@i=\count420
+\c@qr@j=\count421
+\qr@a=\count422
+\qr@b=\count423
+\qr@c=\count424
+\qr@for@depth=\count425
+\qr@for@maxdepth=\count426
+\qr@for@start=\count427
+\qr@for@end=\count428
+\qr@for@step=\count429
+\qr@newforcount=\count430
+\qr@newforcount=\count431
+\qr@desiredheight=\skip80
+\qr@modulesize=\skip81
+\qr@minipagewidth=\skip82
+\c@maski=\count432
+\c@maskj=\count433
+\c@totalones=\count434
+\c@penaltyi=\count435
+\c@penaltyii=\count436
+\c@penaltyiii=\count437
+\c@penaltyiv=\count438
+\c@qr@hexchars=\count439
+\qr@newforcount=\count440
+\c@qr@divisionsremaining=\count441
+) (./setup.tex
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -1542,14 +1569,14 @@ File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfnodepartsixbox=\box130
 \pgfnodepartfivebox=\box131
 )))
-\c@Teorema=\count420
-\c@Ejemplo=\count421
-\c@Definicion=\count422
-\c@Corolario=\count423
-\c@Proposicion=\count424
-\c@Prueba=\count425
-\c@definicion=\count426
-\c@lema=\count427
+\c@Teorema=\count442
+\c@Ejemplo=\count443
+\c@Definicion=\count444
+\c@Corolario=\count445
+\c@Proposicion=\count446
+\c@Prueba=\count447
+\c@definicion=\count448
+\c@lema=\count449
 \mysaveboxM=\box132
 \mysaveboxT=\box133
 
@@ -1615,35 +1642,38 @@ Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
 Package: pgfplotsthemetol 2017/01/23 PGFplots colors based on Paul Tol's SRON t
 echnical note
 )
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 71
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 72
 .
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 ) (./main.aux
-LaTeX Info: Redefining \. on input line 29.
-LaTeX Info: Redefining \% on input line 29.
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
+
+<Reading QR code for "https://github.com/SaulDiazInfante/Beamer-xxx-semana-unis
+on-2020-AppliedMathematicsWorkshop-.git" at level 6-M from aux file.>
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1681,19 +1711,19 @@ LaTeX Font Info:    ... okay on input line 71.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count428
+\scratchcounter=\count450
 \scratchdimen=\dimen408
 \scratchbox=\box138
-\nofMPsegments=\count429
-\nofMParguments=\count430
+\nofMPsegments=\count451
+\nofMParguments=\count452
 \everyMPshowfont=\toks69
-\MPscratchCnt=\count431
+\MPscratchCnt=\count453
 \MPscratchDim=\dimen409
-\MPnumerator=\count432
-\makeMPintoPDFobject=\count433
+\MPnumerator=\count454
+\makeMPintoPDFobject=\count455
 \everyMPtoPDFconversion=\toks70
 )
-Package hyperref Info: Link coloring OFF on input line 71.
+Package hyperref Info: Link coloring OFF on input line 72.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1704,57 +1734,57 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count434
+\c@section@level=\count456
 )
-LaTeX Info: Redefining \ref on input line 71.
-LaTeX Info: Redefining \pageref on input line 71.
-LaTeX Info: Redefining \nameref on input line 71.
+LaTeX Info: Redefining \ref on input line 72.
+LaTeX Info: Redefining \pageref on input line 72.
+LaTeX Info: Redefining \nameref on input line 72.
  (./main.out) (./main.out)
 \@outlinefile=\write8
 \openout8 = `main.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/ztmcm/m/n --> OT1/cmss/m/n on input line 71.
+(Font)                  OT1/ztmcm/m/n --> OT1/cmss/m/n on input line 72.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/ztmcm/m/n --> OT1/cmss/b/n on input line 71.
+(Font)                  OT1/ztmcm/m/n --> OT1/cmss/b/n on input line 72.
 \symnumbers=\mathgroup10
 \sympureletters=\mathgroup11
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/ptm/m/n on input line 71.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 71.
+(Font)                  OT1/cmss/m/n --> T1/ptm/m/n on input line 72.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 72.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/ptm/bx/n --> T1/phv/b/n on input line 71.
+(Font)                  OT1/ptm/bx/n --> T1/phv/b/n on input line 72.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/ptm/bx/n --> T1/phv/b/n on input line 71.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 71.
+(Font)                  OT1/ptm/bx/n --> T1/phv/b/n on input line 72.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 72.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/phv/m/n on input line 71.
+(Font)                  OT1/cmss/m/n --> T1/phv/m/n on input line 72.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/phv/m/n on input line 71.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 71.
+(Font)                  OT1/cmss/bx/n --> T1/phv/m/n on input line 72.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 72.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/ptm/m/it --> T1/phv/m/it on input line 71.
+(Font)                  OT1/ptm/m/it --> T1/phv/m/it on input line 72.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/ptm/m/it --> T1/phv/m/it on input line 71.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 71.
+(Font)                  OT1/ptm/m/it --> T1/phv/m/it on input line 72.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 72.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/pcr/m/n on input line 71.
+(Font)                  OT1/cmtt/m/n --> T1/pcr/m/n on input line 72.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/pcr/m/n on input line 71.
+(Font)                  OT1/cmtt/m/n --> T1/pcr/m/n on input line 72.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/phv/m/n --> T1/phv/b/n on input line 71.
+(Font)                  T1/phv/m/n --> T1/phv/b/n on input line 72.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/phv/m/it --> T1/phv/b/it on input line 71.
+(Font)                  T1/phv/m/it --> T1/phv/b/it on input line 72.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/ptm/b/n on input line 71.
+(Font)                  OT1/cmss/b/n --> T1/ptm/b/n on input line 72.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/phv/b/n --> T1/phv/b/n on input line 71.
+(Font)                  T1/phv/b/n --> T1/phv/b/n on input line 72.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/phv/m/n --> T1/phv/b/n on input line 71.
+(Font)                  T1/phv/m/n --> T1/phv/b/n on input line 72.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/phv/m/it --> T1/phv/b/it on input line 71.
+(Font)                  T1/phv/m/it --> T1/phv/b/it on input line 72.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/pcr/m/n --> T1/pcr/b/n on input line 71.
+(Font)                  T1/pcr/m/n --> T1/pcr/b/n on input line 72.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-basic-dicti
 onary-English.dict
@@ -1783,8 +1813,8 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.18} (current compat level: 1.9).
 
-LaTeX Info: Redefining \. on input line 71.
-LaTeX Info: Redefining \% on input line 71.
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/translations/translations-basic-d
 ictionary-spanish.trsl
@@ -1792,63 +1822,63 @@ File: translations-basic-dictionary-spanish.trsl (spanish translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `spanish'. on input line 71.
-\c@lstlisting=\count435
+or `spanish'. on input line 72.
+\c@lstlisting=\count457
  (./main.nav)
-Overfull \vbox (13.79993pt too high) detected at line 72
+Overfull \vbox (13.79993pt too high) detected at line 73
  []
 
 [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 73.
+ 74.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 73.
+ 74.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 73.
+ 74.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 73
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 74
 .
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Trying to load font information for U+esint on input line 7
-3.
+4.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 7
-3.
+4.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 73.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 73.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 73.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 73.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 74.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7.4> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 73.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 74.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 73.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 74.
  [2
 
 ]
@@ -1982,7 +2012,7 @@ LaTeX Info: Redefining \% on input line 1.
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 82.
+(hyperref)                removing `superscript' on input line 83.
 
 (./ConstruccionDeMetodos/notacion_edes.tex [21
 
@@ -2727,7 +2757,18 @@ No file bu.aux.
 No file bu.aux.
 [119
 
-]) (./Apendice.tex [120
+]
+
+
+<QR code requested for "https://github.com/SaulDiazInfante/Beamer-xxx-semana-un
+ison-2020-AppliedMathematicsWorkshop-.git" in version 0-M.>
+
+<Copying the QR code for "https://github.com/SaulDiazInfante/Beamer-xxx-semana-
+unison-2020-AppliedMathematicsWorkshop-.git" in version 6-M as previously calcu
+lated.>
+[120
+
+]) (./Apendice.tex [121
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{dfn:FuncionCa
@@ -2735,22 +2776,10 @@ racteristica}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.26 \end{frame}
-                 [121
+                 [122
 
 ]
 Overfull \vbox (37.36423pt too high) detected at line 88
- []
-
-[122
-
-]
-pdfTeX warning (ext4): destination with the same identifier (name{frm:integraci
-on}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.88 \end{frame}
-                
-Overfull \vbox (39.86423pt too high) detected at line 88
  []
 
 [123
@@ -2780,18 +2809,18 @@ Overfull \vbox (39.86423pt too high) detected at line 88
 [125
 
 ]
-Overfull \vbox (3.7039pt too high) detected at line 181
+pdfTeX warning (ext4): destination with the same identifier (name{frm:integraci
+on}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.88 \end{frame}
+                
+Overfull \vbox (39.86423pt too high) detected at line 88
  []
 
 [126
 
 ]
-pdfTeX warning (ext4): destination with the same identifier (name{thm:Existenci
-aUnicidadEDE}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.181 \end{frame}
-                 
 Overfull \vbox (3.7039pt too high) detected at line 181
  []
 
@@ -2821,11 +2850,23 @@ Overfull \vbox (3.7039pt too high) detected at line 181
 
 [129
 
-] [130
+]
+pdfTeX warning (ext4): destination with the same identifier (name{thm:Existenci
+aUnicidadEDE}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.181 \end{frame}
+                 
+Overfull \vbox (3.7039pt too high) detected at line 181
+ []
+
+[130
 
 ] [131
 
 ] [132
+
+] [133
 
 ]
 Overfull \hbox (85.03989pt too wide) detected at line 318
@@ -2837,7 +2878,7 @@ Overfull \hbox (28.55574pt too wide) in paragraph at lines 318--318
 []  
  []
 
-[133
+[134
 
 ] (./bu21.aux)
 \openout7 = `bu21.aux'.
@@ -2856,9 +2897,9 @@ No file bu.aux.
 Overfull \vbox (10.91124pt too high) detected at line 420
  []
 
-[134
+[135
 
-] [135
+] [136
 
 ])
 \tf@nav=\write9
@@ -2871,8 +2912,11 @@ Overfull \vbox (10.91124pt too high) detected at line 420
 \openout11 = `main.snm'.
 
  (./main.aux
-LaTeX Info: Redefining \. on input line 29.
-LaTeX Info: Redefining \% on input line 29.
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
+
+<Reading QR code for "https://github.com/SaulDiazInfante/Beamer-xxx-semana-unis
+on-2020-AppliedMathematicsWorkshop-.git" at level 6-M from aux file.>
 )
 
 LaTeX Warning: There were undefined references.
@@ -2881,13 +2925,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 4F5472FA1F2C06119E3486F03ACE84F4;2023.
  ) 
 Here is how much of TeX's memory you used:
- 69215 strings out of 478268
- 1764517 string characters out of 5846353
- 3895029 words of memory out of 5000000
- 85748 multiletter control sequences out of 15000+600000
+ 70676 strings out of 478268
+ 1785073 string characters out of 5846353
+ 3913716 words of memory out of 5000000
+ 87203 multiletter control sequences out of 15000+600000
  599479 words of font info for 210 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,25n,150p,1847b,2478s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,25n,150p,1951b,2478s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{frm:condiciones_zeros} has been referenced but does
  not exist, replaced by a fixed one
@@ -2933,10 +2977,10 @@ st/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-dist/font
 s/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type
 1/urw/symbol/usyr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/symbo
 l/usyr.pfb>
-Output written on main.pdf (135 pages, 3117504 bytes).
+Output written on main.pdf (136 pages, 3121233 bytes).
 PDF statistics:
- 1188 PDF objects out of 1200 (max. 8388607)
- 950 compressed objects within 10 object streams
- 310 named destinations out of 1000 (max. 500000)
+ 1196 PDF objects out of 1200 (max. 8388607)
+ 957 compressed objects within 10 object streams
+ 312 named destinations out of 1000 (max. 500000)
  250 words of extra memory for PDF output out of 10000 (max. 10000000)
 
